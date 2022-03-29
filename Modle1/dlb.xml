@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/29/21||09:52:33" using="Simscape Multibody Link Version 7.0" from="SolidWorks 28.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="daolibai" uid="daolibai" version="222">
+<AssemblyFile name="daolibai.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="daogui-1" uid="daogui-1" grounded="true" entityUid="daogui*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.10013185124264323 0.11042413524826895 0.20661419473055548</Translation>
+</Transform>
+</Instance>
+<Instance name="huakuai-1" uid="huakuai-1" entityUid="huakuai*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.10013185124264334 0.11042413524826897 0.20661419473055545</Translation>
+</Transform>
+</Instance>
+<Instance name="baigan-1" uid="baigan-1" entityUid="baigan*:*Default">
+<Transform>
+<Rotation>0 1 0 1 0 0 0 0 -1</Rotation>
+<Translation>0.10013185124264334 0.15492413524826898 0.28886419473055547</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>daogui-1</Uid>
+</InstancePath>
+<Position>-0.59999999999999987 0.024500000000000008 -0.012249999999999983</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>huakuai-1</Uid>
+</InstancePath>
+<Position>-0.060000000000000039 0 -0.012249999999999955</Position>
+<Axis>3.9650822308041302e-16 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>daogui-1</Uid>
+</InstancePath>
+<Position>0 0.024500000000000008 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>huakuai-1</Uid>
+</InstancePath>
+<Position>-0.060000000000000026 0.024499999999999994 0.012250000000000039</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>huakuai-1</Uid>
+</InstancePath>
+<Position>0 0.044500000000000012 0.06225</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>baigan-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000018</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>huakuai-1</Uid>
+</InstancePath>
+<Position>-0.059999999999999998 0.044500000000000012 0.032250000000000001</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>baigan-1</Uid>
+</InstancePath>
+<Position>0 0 0.049999999999999989</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="baigan" uid="baigan*:*Default" version="323">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="baigan.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.1586504290062853</Mass>
+<CenterOfMass>0.48381516981644135 0 0.024926920592193841</CenterOfMass>
+<Inertia>0.0053615631446632724 0.4603395351444618 0.46354920243682496 0 -0.00018239402198287722 0</Inertia>
+</MassProperties>
+<GeometryFile name="baigan_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="daogui" uid="daogui*:*Default" version="303">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="daogui.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.72030000000000016</Mass>
+<CenterOfMass>0 0.012249999999999999 0</CenterOfMass>
+<Inertia>7.2060012500000002e-05 0.08647203000625002 0.08647203000625002 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="daogui_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="huakuai" uid="huakuai*:*Default" version="460">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="huakuai.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.59378295045659868</Mass>
+<CenterOfMass>0 0.023252842279660315 0</CenterOfMass>
+<Inertia>0.00074885901316762698 0.00091576890439897646 0.00091448288055258082 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="huakuai_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
